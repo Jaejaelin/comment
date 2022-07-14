@@ -76,6 +76,8 @@
       
       if(item!=null){
         itemList.push(item); //itemList 배열 끝에 item 변숫값 
+        document.querySelector("#item").value=""; //id="item" 인 요소 값을 지움
+        document.querySelector("#item").focus(); //텍스트 필드에 focus() 함수적용
       }
     
     }
