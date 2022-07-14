@@ -80,7 +80,8 @@
         document.querySelector("#item").value=""; //id="item" 인 요소 값을 지움
         document.querySelector("#item").focus(); //텍스트 필드에 focus() 함수적용
       }
-    
+      
+      showList(); //목록을 표시하는 showList()함수 
     }
     
     funtion showList(){
@@ -91,6 +92,7 @@
       }
       List+="</ul>"; //목록을 끝내는 </ul>태그 저장
       
+      document.querySelector("#itemList").innerHTML = list; //list 변숫값 표시
     }
     
     
