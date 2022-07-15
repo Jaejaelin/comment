@@ -72,11 +72,14 @@
      
      ul{
        list-style:none;
-       background: rgba(0,0,0,0.5);
      }
      
      ul li{
-       background: rgba(255,255,255,0.5);
+       background: rgba(255,255,255,0.1);
+       font-size:18px;
+     }
+     ul li:nth-child(odd) {
+       background: rgba(0,0,0,0.1);
      }
      
    </style>
@@ -98,7 +101,7 @@
       
       <div class="comment">     
         <form>
-         <label for="item" style="color:grey; font-weight:3;">Comment</label>
+         <label for="item" style="color:grey; font-weight:5;">Comment</label>
          <textarea id="item" rows="8" cols="80" style="resize:none; vertical-align: middle; outline:none;" autofocus="true"></textarea>
          <button type="button" id="add" class="addBtn">ADD</button>
         </form>
