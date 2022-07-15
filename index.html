@@ -45,12 +45,21 @@
      
      .comment{
        display: flex;
+       margin: auto;
+       text-align: center;       
+       margin-left: 5px;
+     }
+     
+     .commnet-item{
+       margin-left: 5px;
+       color: grey;
+       margin: auto;
      }
      
      input{
        width: 600px;
        height: 90px;
-       font-size: 16px;
+       font-size: 16px;       
      }
      
    </style>
@@ -68,8 +77,10 @@
     </div>
   
     <div class="main">
-      <div class="comment">      
+      <div class="comment">     
+        <div class="commnet-item">           
         <h4>Comment</h4>
+        </div>
         <form>
          <input type="text" id="item" autofocus="true">
          <button type="button" id="add" class="addBtn">ADD</button>
