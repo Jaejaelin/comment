@@ -122,12 +122,12 @@
       <div class="comment">     
         <form>
          <div class="name">
-            <label for="name-item" style="padding:8px;">Name</label>          
+            <label for="nameItem" style="padding:8px;">Name</label>          
             <input type="text" id="name-item"><br>
          </div>
          <div class="email">
-            <label for="email-item" style="padding:8px;">E-mail</label>          
-            <input type="text" id="email-item"><br>
+            <label for="emailItem" style="padding:8px;">E-mail</label>          
+            <input type="text" id="emailItem"><br>
          </div>
          <div class="blank">
          <label for="item" style="padding:8px;">Comment</label>
@@ -148,19 +148,43 @@
     
     function addList(){
       var item= document.querySelector("#item").value; //텍스트필드 내용 가져옴
-      var item= document.querySelector("#name-item").value; //Bja
+      var nameItem= document.querySelector("#nameItem").value; 
+      var emailItem= document.querySelector("#emailItem").value; 
       
-      if(item!=null){
-        if(name-item!=0){ //Bja
-          item = name-item + ':   ' + item;
+      var output = ''; // Bja
+      
+      if(item!=null&&(item!='')){
+        // Write Name 
+        if((nameItem!=null)&&(nameItem!='')){ 
+          output =  nameItem + ':' + "</br>" ;
         } 
         else{
-          item = 'Anonymus:   ' + item;
+          output = 'Anonymus:' + "</br>";
+        }
+        // Write Email
+        if((emailItem!=null)&&(emailItem!='')){ 
+          output =  output + emailItem + "</br>";
+        } 
+        else{
+          output = 'No mail';
+        }
+
+        if((item!=null)&&(item!='')){ 
+          output +=  item;
+        } 
+        else{
+          output = 'No comment';
         }
         
         itemList.push(item); //itemList 배열 끝에 item 변숫값 
         document.querySelector("#item").value=""; //id="item" 인 요소 값을 지움
         document.querySelector("#item").focus(); //텍스트 필드에 focus() 함수적용
+
+        document.querySelector("#nameItem").value=""; //id="nameItem" 인 요소 값을 지움
+        document.querySelector("#nameItem").focus(); //텍스트 필드에 focus() 함수적용
+
+        document.querySelector("#emailItem").value=""; //id="emailItem" 인 요소 값을 지움
+        document.querySelector("#emailItem").focus(); //텍스트 필드에
       }
       
       showList(); //목록을 표시하는 showList()함수 
