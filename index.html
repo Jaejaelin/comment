@@ -43,6 +43,10 @@
        background-color: #FAECCA;
      }
      
+     .comment{
+       display: flex;
+     }
+     
      input{
        width: 600px;
        height: 90px;
@@ -64,13 +68,14 @@
     </div>
   
     <div class="main">
-      
-      <form>
-        <h4>Comment</h4>
-        <input type="text" id="item" autofocus="true">
-        <button type="button" id="add" class="addBtn">ADD</button>
-      </form>
-      <div id="itemList"></div>
+      <div class="comment">      
+       <form>
+         <h4>Comment</h4>
+         <input type="text" id="item" autofocus="true">
+         <button type="button" id="add" class="addBtn">ADD</button>
+        </form>
+       <div id="itemList"></div>
+      </div>
       
     </div>    
   
