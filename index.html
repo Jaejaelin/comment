@@ -49,7 +49,7 @@
        display: flex;
        margin: auto;
        text-align: center;     
-       background-color: white;
+       background: rgba(255,255,255,250);
        border-radius: 5.5px;
      }
      
@@ -75,11 +75,12 @@
      }
      
      ul li{
-       background: rgba(255,255,255,0.1);
-       font-size:18px;
+       background: rgba(255,255,255,0.3);
+       font-size: 18px;
+       padding: 5px;
      }
      ul li:nth-child(odd) {
-       background: rgba(0,0,0,0.1);
+       background: rgba(0,0,0,0.3);
      }
      
    </style>
@@ -101,7 +102,7 @@
       
       <div class="comment">     
         <form>
-         <label for="item" style="color:grey; font-weight:5;">Comment</label>
+         <label for="item" style="color:grey; font-weight:8;">Comment</label>
          <textarea id="item" rows="8" cols="80" style="resize:none; vertical-align: middle; outline:none;" autofocus="true"></textarea>
          <button type="button" id="add" class="addBtn">ADD</button>
         </form>
