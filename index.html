@@ -31,7 +31,7 @@
      
      .Feedback{
        font-size:95px;
-       color:#FFD5DA;
+       color:#FFD0D4;
      }
      
      .nav-subtitle{
@@ -108,9 +108,15 @@
       
       <div class="comment">     
         <form>
+         <div class="name">
+            <label for="name-item" style="padding:8px;">Name</label>          
+            <input type="text" id="name-item"><br>
+         </div>
+         <div class="blank">
          <label for="item" style="padding:8px;">Comment</label>
          <textarea id="item" rows="8" cols="80" style="resize:none; vertical-align: middle; outline:none;" autofocus="true"></textarea>
          <button type="button" id="add" class="addBtn" style="font-size:10;">ADD</button>
+         </div>
         </form>
       </div>
       
