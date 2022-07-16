@@ -88,6 +88,10 @@
        font-family: 'Montserrat', sans-serif;
      }
      
+     .button{
+       height: 20px;
+     }
+     
      ul{
        list-style:none;
      }
@@ -123,16 +127,16 @@
         <form>
           <table>
             <tr>
-              <td id="name">Name</td>
+              <td id="name" style="padding:8px;">Name</td>
               <td><input type="text" id="nameItem"></td>
-              <td rowspan="2"><button type="button" id="add" class="addBtn" style="font-size:10;">ADD</button></td>          
+              <td rowspan="3"><button type="button" id="add" class="addBtn" style="font-size:10;">ADD</button></td>          
             </tr>
             <tr>
-              <td id="email"></td>
+              <td id="email" style="padding:8px;">E-mail</td>
               <td><input type="text" id="emailItem"><br></td>
             </tr>
             <tr>
-              <td id="blank">Comment</td>
+              <td id="blank" style="padding:8px;">Comment</td>
               <td><textarea id="item" rows="8" cols="80" style="resize:none; vertical-align: middle; outline:none;" autofocus="true"></textarea></td>
             </tr>
           </table>
